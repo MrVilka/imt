@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title> ИМТ </title>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    Вес - кг
+                </td>
+                <td>
+                    <input id="in1" type="number">
+                </td>
+            <tr>
+                <td>
+                    Рост - см
+                </td>
+                <td>
+                    <input id="in2" type="number">
+                </td>
+            </tr>
+            </tr>
+        </table>
+        <button type="submit" id="btn"> Рассчитать </button> <br>
+        <label for="">ИМТ</label> <br>
+        <textarea cols="30" rows="5" name="" id="tear"></textarea>
+
+        <div class="line" id="line">
+            <div class="col" style="color: #4451c8">
+                <span>Недовес</span>
+                <p>&lt;18,5</p>
+            </div>
+            <div class="col" style="color: green">
+                <span>Нормальный вес</span>
+                <p>18,5 - 24,9</p>
+            </div>
+            
+            <div class="col" style="color: rgb(133, 133, 11)">
+                <span>Избыточный вес</span>
+                <p>25 - 29,9</p>
+            </div>
+            <div class="col" style="color: orange">
+                <span>Ожирение</span>
+                <p>30 - 34,9</p>
+            </div>
+            <div class="col" style="color: red">
+                <span>Сильное ожирение</span>
+                <p>35&gt;</p>
+            </div>
+        </div>
+    </center>
+    <script src="js.js"></script>
+</body>
+</html>
